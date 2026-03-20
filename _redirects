@@ -1,0 +1,3 @@
+# Netlify redirects
+# Redirect www to non-www (handled by Netlify domain settings, but included as fallback)
+# https://www.languageappguide.com/* https://languageappguide.com/:splat 301!
