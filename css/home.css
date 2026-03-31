@@ -51,11 +51,16 @@ body.page-home .site-header {
 
 body.page-home .logo {
   font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 1.15rem;
   color: #1A1A1A !important;
   letter-spacing: 0;
+}
+
+body.page-home .logo em {
+  font-style: italic;
+  color: #D4845A;
 }
 
 body.page-home .main-nav a {
@@ -106,13 +111,18 @@ body.page-home .hero {
 
 body.page-home .hero h1 {
   font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: clamp(2.2rem, 5vw, 3.75rem);
   color: #1A1A1A;
   line-height: 1.2;
   max-width: 760px;
   margin: 0 auto 1.25rem;
+}
+
+body.page-home .hero h1 em {
+  font-style: italic;
+  color: #D4845A;
 }
 
 body.page-home .hero p {
