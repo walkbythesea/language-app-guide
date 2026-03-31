@@ -672,6 +672,23 @@ ul, ol { padding-left: 1.5em; }
 .hub-content {
   padding-bottom: 3.5rem;
 }
+.comparison-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 2rem;
+}
+.comparison-grid .card {
+  height: 100%;
+}
+@media (max-width: 980px) {
+  .comparison-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .coming-soon {
   text-align: center;
   padding: 2rem;
