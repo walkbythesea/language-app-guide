@@ -1,0 +1,142 @@
+/* ============================================
+   Design System — Warm Editorial Palette
+   Loaded by all inner pages after style.css
+   Mirrors the homepage (body.page-home) visual style
+   ============================================ */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* --- Override CSS Variables (warm editorial palette) --- */
+:root {
+  --color-primary:       #1A1A1A;
+  --color-primary-light: #2F2F2F;
+  --color-accent:        #D4845A;
+  --color-accent-light:  #FAF0E8;
+  --color-text:          #1A1A1A;
+  --color-text-light:    #6B6259;
+  --color-heading:       #1A1A1A;
+  --color-bg:            #F5F2EC;
+  --color-bg-alt:        #EDE9E0;
+  --color-border:        #DDD8CF;
+  --font-heading:        'Playfair Display', Georgia, serif;
+  --font-body:           'Lora', Georgia, serif;
+}
+
+/* --- Body --- */
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.8;
+  background: #F5F2EC;
+  color: #1A1A1A;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+/* ============================================
+   Header — warm light bg (was dark blue)
+   ============================================ */
+.site-header {
+  background: #F5F2EC;
+  border-bottom: 1px solid #DDD8CF;
+  box-shadow: none;
+  color: #1A1A1A;
+}
+
+.logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #1A1A1A !important;
+}
+.logo em {
+  font-style: italic;
+  color: #D4845A;
+}
+
+.main-nav a {
+  color: #1A1A1A;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: none;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  color: #D4845A;
+  background: none;
+}
+
+/* Hamburger: dark lines on light background */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: #1A1A1A;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    background: #F5F2EC;
+    border-top: 1px solid #DDD8CF;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.07);
+  }
+  .main-nav a {
+    border-bottom-color: #DDD8CF;
+  }
+}
+
+/* ============================================
+   Footer — dark neutral (was dark blue)
+   ============================================ */
+.site-footer {
+  background: #1A1A1A;
+  color: rgba(255,255,255,0.65);
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  color: #fff;
+}
+
+.footer-slogan {
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+  opacity: 0.55;
+}
+
+.footer-nav a {
+  color: rgba(255,255,255,0.55);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer-nav a:hover {
+  color: #D4845A;
+}
+
+/* ============================================
+   Component overrides — hardcoded colors
+   ============================================ */
+
+/* Verdict box: override hardcoded blue border from style.css */
+.verdict-box {
+  border-color: #E8C9B0;
+}
+
+/* Eyebrow label */
+.eyebrow {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #D4845A;
+  margin-bottom: 0.85rem;
+}
