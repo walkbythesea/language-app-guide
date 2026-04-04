@@ -278,6 +278,7 @@ ul, ol { padding-left: 1.5em; }
   color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
+.card h2,
 .card h3 {
   font-family: var(--font-heading);
   font-size: 1.15rem;
@@ -285,7 +286,9 @@ ul, ol { padding-left: 1.5em; }
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
+.card h2 a,
 .card h3 a { color: inherit; }
+.card h2 a:hover,
 .card h3 a:hover { color: var(--color-accent); }
 .card p {
   font-size: 0.95rem;
@@ -327,12 +330,15 @@ ul, ol { padding-left: 1.5em; }
   justify-content: center;
   font-size: 1.5rem;
 }
+.app-item h3,
 .app-item h4 {
   font-size: 0.95rem;
   margin-bottom: 0.35rem;
   color: var(--color-heading);
 }
+.app-item h3 a,
 .app-item h4 a { color: inherit; }
+.app-item h3 a:hover,
 .app-item h4 a:hover { color: var(--color-accent); }
 .app-item .badge-soon {
   display: inline-block;
